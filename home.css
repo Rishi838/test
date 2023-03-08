@@ -258,7 +258,6 @@ a.site-logo {
 
 /* SearchBox css Ends here */
 /* Courses card css starts here */
-
 @font-face {
   font-family: "Mona Sans";
   src: url("https://assets.codepen.io/64/Mona-Sans.woff2") format("woff2 supports variations"), url("https://assets.codepen.io/64/Mona-Sans.woff2") format("woff2-variations");
@@ -319,6 +318,7 @@ a.site-logo {
   inherits: true;
   initial-value: 0;
 }
+
 :root {
   --debug: 0;
   --supported: 0;
@@ -381,8 +381,7 @@ a.site-logo {
   width: 100%;
   padding: 0;
   margin: 0;
-} */
-
+}*/ 
 
 .courses{
   background-color: var(--card-color);
@@ -409,17 +408,20 @@ a.site-logo {
   border-radius: var(--card-radius);
   cursor: pointer;
 }
+
 .courses> div:hover > div {
   mix-blend-mode: darken;
   --text-color: white;
   box-shadow: 0 0 calc(var(--white-shadow) * 1vw) calc(var(--white-shadow) * 0.15vw) rgba(255, 255, 255, 0.2);
   animation: shadow-pulse calc(var(--animation-speed) * 2) linear infinite;
 }
+
 .courses > div:hover > div:before {
   --bg-size: 15;
   animation-play-state: paused;
   transition: --bg-size var(--interaction-speed) ease;
 }
+
 .courses > div:hover .glow {
   --glow-blur: 1.5;
   --glow-opacity: 0.6;
@@ -435,7 +437,8 @@ a.site-logo {
   animation-play-state: paused;
   transition: --glow-translate-y 0s ease, --glow-blur 0.05s ease, --glow-opacity 0.05s ease, --glow-scale 0.05s ease, --glow-radius 0.05s ease;
 }
-.courses > div:before, body > div:after {
+
+.courses > div:before, .courses > div:after {
   content: "";
   display: block;
   position: absolute;
@@ -443,6 +446,7 @@ a.site-logo {
   height: 100%;
   border-radius: var(--card-radius);
 }
+
 .courses > div > div {
   position: absolute;
   width: 100%;
@@ -460,6 +464,7 @@ a.site-logo {
   color: var(--text-color);
   padding: calc(var(--card-width) / 8);
 }
+
 .courses > div > div span {
   display: inline-block;
   padding: 0.25em;
