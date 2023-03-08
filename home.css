@@ -388,7 +388,7 @@ a.site-logo {
   background-color: var(--card-color);
   display: flex;
   flex-wrap: wrap;
-  padding-top: 10rem;
+  padding-top: 5rem;
   align-items: center;
   justify-content: center;
   font-family: "Mona Sans", sans-serif;
@@ -396,10 +396,11 @@ a.site-logo {
 
 .courses > div {
   width: var(--card-width);
-  width: min(var(--card-width));
   aspect-ratio: 1.5/1;
   color: white;
-  margin: auto;
+  margin: 2px;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
