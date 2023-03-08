@@ -326,7 +326,7 @@ a.site-logo {
   --card-color: hsl(260deg 100% 3%);
   --text-color: hsl(260deg 10% 55%);
   --card-radius: 3.6vw;
-  --card-width: 30vw;
+  --card-width: 50vh;
   --border-width: 3px;
   --bg-size: 1;
   --hue: 0;
